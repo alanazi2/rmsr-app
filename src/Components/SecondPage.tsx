@@ -1,36 +1,20 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const SecondPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-zinc-800 text-white flex items-center justify-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="container mx-auto text-center p-8"
-      >
-        <h1 className="text-4xl font-bold mb-6">My Projects</h1>
-        <p className="text-lg mb-8">
-          Here are some of the projects I have worked on recently.
+    <section className="bg-gray-800 text-white py-20">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Training</h2>
+        <img
+          src="/sss.png"
+          alt="Saudi Federation for Cybersecurity, Programming and Drones"
+          className="w-40 h-40 mx-auto mb-4"
+        />
+        <p className="text-lg">
+          Software Engineer at the Saudi Federation for Cybersecurity, Programming, and Drones
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            { title: "Project 1", description: "Description of project 1" },
-            { title: "Project 2", description: "Description of project 2" },
-            { title: "Project 3", description: "Description of project 3" },
-          ].map((project, index) => (
-            <div
-              key={index}
-              className="p-6 rounded-2xl bg-zinc-700 text-left shadow-lg"
-            >
-              <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-              <p className="text-sm text-zinc-400">{project.description}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+      </div>
+    </section>
   );
 };
 
