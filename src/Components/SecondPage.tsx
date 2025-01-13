@@ -1,32 +1,26 @@
 import React from 'react';
 
-type Skill = {
-  name: string;
-};
-
-const skills: Skill[] = [
-  { name: "JavaScript" },
-  { name: "HTML" },
-  { name: "CSS" },
-  { name: "SQL" },
-  { name: "Bootstrap" },
-  { name: "DOM Manipulation" },
-  { name: "jQuery" },
-  { name: "Node.js" },
-  { name: "Express.js" },
-  { name: "MongoDB" },
-  { name: "MySQL" },
-  { name: "Git" },
-  { name: "GitHub" },
-];
-
 const SecondPage: React.FC = () => {
+  const skills = [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "SQL",
+    "Bootstrap",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "Git",
+    "GitHub",
+  ];
+
   return (
-    <section className="p-4">
-      <h2 className="text-2xl font-semibold">Technical Skills</h2>
-      <ul className="list-disc list-inside">
+    <section className="p-8 bg-white text-gray-900">
+      <h2 className="text-4xl font-bold mb-4">Technical Skills</h2>
+      <ul className="grid grid-cols-2 gap-4">
         {skills.map((skill, index) => (
-          <li key={index}>{skill.name}</li>
+          <li key={index} className="text-lg bg-gray-200 p-4 rounded-lg shadow">{skill}</li>
         ))}
       </ul>
     </section>
