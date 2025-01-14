@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
           className="w-32 h-32 mx-auto mb-4"
         />
         <p className="text-lg">
-          Programming Technology from Imam Muhammad Bin Saud Islamic University - June 2024
+          Programming Technology from Imam Muhammad Bin Saud Islamic University - June 2024 
         </p>
       </div>
     </section>

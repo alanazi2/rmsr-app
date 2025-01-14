@@ -1,8 +1,7 @@
-import React from 'react';
-import Header from './components/Header';
-import HomePage from './components/HomePage';
-import SecondPage from './components/SecondPage';
-import Footer from './components/Footer';
+import Header from './Components/Header';
+import HomePage from './Components/HomePage';
+import SecondPage from './Components/SecondPage';
+import Footer from './Components/Footer';
 
 const App: React.FC = () => {
   return (

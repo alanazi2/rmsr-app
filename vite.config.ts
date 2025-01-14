@@ -1,8 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/rmsr-app/', // تحديد المسار الصحيح للنشر على GitHub Pages
-})
+  build: {
+    outDir: 'dist', // مسار الملفات النهائية للنشر
+    sourcemap: true, // للمساعدة في تتبع الأخطاء (اختياري)
+  },
+});
