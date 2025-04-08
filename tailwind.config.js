@@ -1,15 +1,14 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/rms1.jpg')",
+      fontFamily: {
+        sans: ["'Urbanist'", "sans-serif"], // ← خط الموقع الأساسي
       },
     },
   },
   plugins: [],
-}
+};

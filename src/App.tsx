@@ -1,17 +1,12 @@
-import Header from './Components/Header';
-import HomePage from './Components/HomePage';
-import SecondPage from './Components/SecondPage';
-import Footer from './Components/Footer';
-
-const App: React.FC = () => {
+import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+export default function HomePage() {
   return (
-    <div>
+    <main className="min-h-screen bg-[#0F0F0F] text-white font-sans">
       <Header />
-      <HomePage />
-      <SecondPage />
-      <Footer />
-    </div>
+      <Hero />
+    </main>
   );
-};
-
-export default App;
+}
+//Hero
