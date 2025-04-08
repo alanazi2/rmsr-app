@@ -21,9 +21,9 @@ export default function Hero() {
                 Front-end Developer / Software Engineer / Software Developer
               </p>
               <div className="flex justify-center gap-6 pt-6">
-                <a href="#"><img src={email} alt="email" className="w-8 h-8" /></a>
-                <a href="#"><img src={github} alt="github" className="w-8 h-8" /></a>
-                <a href="#"><img src={linkedin} alt="linkedin" className="w-8 h-8" /></a>
+                <a href="mailto:alanazirashid4@gmail.com"><img src={email} alt="email" className="w-8 h-8" /></a>
+                <a href="https://github.com/alanazi2" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" className="w-8 h-8" /></a>
+                <a href="https://www.linkedin.com/in/rashid-alanazi-291513295" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" className="w-8 h-8" /></a>
               </div>
             </div>
 
@@ -35,9 +35,9 @@ export default function Hero() {
                 Front-end Developer / Software Engineer / Software Developer
               </p>
               <div className="flex gap-4 pt-6">
-                <a href="#"><img src={email} alt="email" className="w-8 h-8" /></a>
-                <a href="#"><img src={github} alt="github" className="w-8 h-8" /></a>
-                <a href="#"><img src={linkedin} alt="linkedin" className="w-8 h-8" /></a>
+                <a href="mailto:alanazirashid4@gmail.com"><img src={email} alt="email" className="w-8 h-8" /></a>
+                <a href="https://github.com/alanazi2" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" className="w-8 h-8" /></a>
+                <a href="https://www.linkedin.com/in/rashid-alanazi-291513295" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" className="w-8 h-8" /></a>
               </div>
             </div>
           </div>
