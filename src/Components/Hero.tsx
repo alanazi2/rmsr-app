@@ -66,7 +66,7 @@ export default function Hero() {
           </div>
 
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">SE Developer</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">SE</h2>
             <p className="text-sm leading-relaxed text-gray-200">
               "I am a passionate programmer with strong experience in front-end development. I have the ability to develop applications using the latest technologies and programming tools, focusing on providing outstanding and seamless user experiences. I am always striving to improve my skills and engage in continuous learning in the field of programming, working on implementing innovative solutions that contribute to enhancing performance and quality."
             </p>
