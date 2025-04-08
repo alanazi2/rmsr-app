@@ -18,7 +18,7 @@ export default function Hero() {
               <p className="text-xl font-medium">Hi, I am</p>
               <h1 className="text-4xl font-extrabold text-black">Rashid Al Aanazi</h1>
               <p className="text-gray-700 font-semibold leading-relaxed max-w-md mx-auto">
-                Front-end Developer / Software Engineer / Software Developer
+                Software Engineer / Web Developer
               </p>
               <div className="flex justify-center gap-6 pt-6">
                 <a href="mailto:alanazirashid4@gmail.com"><img src={email} alt="email" className="w-8 h-8" /></a>
@@ -32,7 +32,7 @@ export default function Hero() {
               <p className="text-xl font-medium">Hi, I am</p>
               <h1 className="text-5xl font-extrabold text-black">Rashid Al Aanazi</h1>
               <p className="text-gray-700 font-semibold leading-relaxed">
-                Front-end Developer / Software Engineer / Software Developer
+              Software Engineer / Web Developer
               </p>
               <div className="flex gap-4 pt-6">
                 <a href="mailto:alanazirashid4@gmail.com"><img src={email} alt="email" className="w-8 h-8" /></a>
