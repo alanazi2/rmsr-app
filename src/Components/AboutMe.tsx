@@ -1,5 +1,5 @@
 import React from "react";
-import separator from "../assets/separatorBlack 2.png";
+import separator from "../assets/separatorBlack2.png";
 import design from "../assets/design.png";
 import development from "../assets/development.png";
 import maintenance from "../assets/maintenance.png";
