@@ -2,7 +2,7 @@ import React from "react";
 import saham from "../assets/saham.png";
 import linkedin from "../assets/inplak.png";
 import email from "../assets/emailplak.png";
-
+import gethup1 from "../assets/gethup1.png";
 export default function Footer() {
   return (
     <footer className="bg-[#1A1A1A] text-white py-10 text-center">
@@ -19,6 +19,9 @@ export default function Footer() {
         <a href="https://linkedin.com/in/rashid-alanazi-291513295" target="_blank" rel="noopener noreferrer">
           <img src={linkedin} alt="LinkedIn" className="w-6 h-6" />
         </a>
+       <a href="https://github.com/alanazi2">
+                        <img src={gethup1} alt="github" className="w-8 h-8" />
+                      </a>
         <a href="mailto:alanazirashid4@gmail.com">
           <img src={email} alt="Email" className="w-6 h-6" />
         </a>
