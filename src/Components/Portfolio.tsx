@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import portfolioBg from "../assets/portfolioimg.png";
 import sakoraa from "../assets/sakoraa.png";
 import sakoraa1 from "../assets/sakoraa1.png";
@@ -16,9 +17,8 @@ const allProjects = [
   { src: businec4, category: "BusinessEch" },
 ];
 
-const categories = ["All", "Sakura", "BusinessEch"];
-
 export default function Portfolio() {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filtered =
@@ -26,32 +26,33 @@ export default function Portfolio() {
       ? allProjects
       : allProjects.filter((p) => p.category === selectedCategory);
 
+  const categories = ["All", "Sakura", "BusinessEch"];
+
   return (
-    <section id="portfolio" className="relative bg-black text-white">
+    <section id="portfolio" className="relative bg-black text-white font-saudi">
       {/* Background Image */}
       <div
         className="w-full h-[40vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${portfolioBg})` }}
       >
         <div className="border-4 border-black px-10 py-3 bg-transparent text-white font-bold text-xl tracking-[0.3em]">
-          PORTFOLIO
+          {t("portfolio1")}
         </div>
       </div>
-
-      {/* Filter */}
-      <div className="flex justify-center space-x-8 mt-8 border-b border-gray-600 max-w-md mx-auto pb-2">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setSelectedCategory(cat)}
-            className={`uppercase text-sm tracking-wide transition duration-200 pb-1 ${
-              selectedCategory === cat ? "border-b-2 border-white" : "text-gray-400"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+{/* Filter */}
+<div className="flex justify-center flex-wrap gap-x-8 gap-y-3 mt-8 border-b border-gray-600 max-w-md mx-auto pb-2">
+  {categories.map((cat) => (
+    <button
+      key={cat}
+      onClick={() => setSelectedCategory(cat)}
+      className={`uppercase text-sm tracking-wide transition duration-200 pb-1 ${
+        selectedCategory === cat ? "border-b-2 border-white" : "text-gray-400"
+      }`}
+    >
+      {t(cat)}
+    </button>
+  ))}
+</div>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 py-10">
@@ -68,13 +69,8 @@ export default function Portfolio() {
 
       {/* Footer Text */}
       <div className="text-center text-sm text-white pb-10">
-        And many more to come!
+        {t("portfolio_footer")}
       </div>
     </section>
   );
 }
-
-
-
-//{ src: businec4 , category: "BusinessEch" },
-//import businec4 from "../assets/businec4.png";

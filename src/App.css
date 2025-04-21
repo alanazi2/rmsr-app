@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 
-  
-html {
-    scroll-behavior: smooth;
+@font-face {
+    font-family: "Saudi-Regular";
+    src: url("/fonts/Saudi-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
   }
+  
+  @font-face {
+    font-family: "Saudi-SemiBold";
+    src: url("/fonts/Saudi-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Saudi-Regular", sans-serif;
+  }
+  
   

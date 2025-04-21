@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import AboutMe from "./Components/AboutMe";
@@ -7,9 +8,11 @@ import Experience from "./Components/Experience";
 import Skills from "./Components/Skills";
 import Portfolio from "./Components/Portfolio";
 import Footer from "./Components/Footer";
+import "./i18n";
+
 export default function App() {
   return (
-    <main id="home">
+    <div className="font-saudi">
       <Header />
       <Hero />
       <AboutMe />
@@ -18,8 +21,6 @@ export default function App() {
       <Skills />
       <Portfolio />
       <Footer />
-    </main>
+    </div>
   );
 }
-
-//Portfolio
